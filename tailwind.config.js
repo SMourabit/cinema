@@ -20,7 +20,9 @@ module.exports = {
         laptop: '1024px',
         // => @media (min-width: 1024px) { ... }
   
-        desktop: '1536px',
+        desktop: '1236px',
+        pro:'1095px',
+        main: '1430px',
         // => @media (min-width: 1280px) { ... }
       },
     

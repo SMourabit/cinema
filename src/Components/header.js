@@ -12,7 +12,7 @@ function Header() {
   };
   return (
     <div
-      className="h-20 z-40 bg-header-hero
+      className="h-20 z-50 bg-header-hero
         lg:w-[100%]  lg:h-16  text-white  
         lg:fixed 
         "
@@ -44,7 +44,7 @@ function Header() {
         {isClicked.menu ? (
           " "
         ) : (
-          <div className="lg:hidden flex flex-col justify-center w-[100%] h-[100vh] md:w-[45%] bg-header-hero z-30 absolute right-0  ">
+          <div className="lg:hidden flex flex-col justify-center w-[100%] h-[100vh]  duration-150 md:w-[45%] bg-header-hero z-30 absolute right-0  ">
             <div className="flex flex-row mt-0 absolute top-0">
               <GiFilmSpool
                 className="h-12 w-20 mt-16
@@ -54,22 +54,22 @@ function Header() {
                 FilmLand
               </h1>
             </div>
-            <ul className="flex flex-col lg:gap-16 ml-4 gap-8 bg-header-hero w-[93%]  mt-[-28rem] font-semibold   ">
+            <ul className="flex flex-col lg:gap-16 ml-6 gap-8 bg-header-hero w-[90%]  mt-[2rem] font-semibold   ">
               <li className="duration-500 hover:text-header-red"><a href="#HOME">HOME</a>  </li>
               <li className="duration-500 hover:text-header-red"><a href="#SERVICE">SERVICE</a> </li>
               <li className="duration-500 hover:text-header-red"><a href="#MOVIE"> MOVIE </a></li>
               <li className="duration-500 hover:text-header-red"><a href="#SERIES">SERIES</a> </li>
             </ul>
 
-            <button className="absolute top-[27rem] ml-4 lg:right-6 w-[10rem]  h-[3rem] 
-                font-bold border-header-red hover:bg-header-red  hover:text-black ">
+            <button className="absolute top-[27rem] ml-1 lg:right-6 w-[7rem]  h-[3rem] 
+                font-bold border-header-red hover:text-header-red   ">
               WELCOME
             </button>
           </div>
         )}
 
         <div className="hidden md:hidden  lg:flex  justify-center w-[100%] h-28 items-center font-semibold lg:ml-[9rem] lg:text-[17px]">
-          <ul className="flex flex-row gap-16  mt-[-3rem] lg:mr-[18rem]">
+          <ul className="flex flex-row gap-16  mt-[-3rem] lg:mr-[18rem] bg">
           <li className="duration-500 hover:text-header-red"><a href="#HOME">HOME</a>  </li>
               <li className="duration-500 hover:text-header-red"><a href="#SERVICE">SERVICE</a> </li>
               <li className="duration-500 hover:text-header-red"><a href="#SERIES">SERIES</a> </li>

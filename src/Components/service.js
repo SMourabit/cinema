@@ -1,16 +1,16 @@
 import React from 'react'
-import { AiOutlineLine } from 'react-icons/ai'
 import { IoLaptop } from 'react-icons/io5'
 import { BsFillCameraVideoFill } from 'react-icons/bs'
 function Service() {
     return (
         <div id='SERVICE'className='text-white grid bg-header-hero 
-        lg:grid-cols-2 grid-cols-1 w-[100%] lg:h-[39rem] lg:mt-[35rem] place-items-center
-        md:mt-[33rem] md:h-[46rem]
+        lg:grid-cols-2 grid-cols-1 w-[100%] lg:h-[72rem] lg:mt-[38rem] place-items-center
+        md:mt-[33rem] md:h-[46rem] 
         h-[60rem] mt-[32rem]
+        main:mt-[24rem]
         '>
             <img src="../../images/s.jpg" className='mt-[3rem] h-[24rem] 
-            lg:w-[25rem] lg:h-[26rem] lg:ml-[11.5rem] md:mt-[30px] md:w-[33%] md:h-[20rem]  w-[15rem]'alt="" />
+            lg:w-[20rem]  lg:ml-[3rem] lg:h-[26rem]  md:mt-[30px] md:w-[20rem] md:h-[20rem]  w-[15rem]'alt="" />
             <div className='w-[15rem] lg:w-[25rem] md:w-[25rem]'>
                 <div>
                     <h5 className='font-bold lg:text-[25px] text-yellow-400'> OUR SERVICES  </h5>
