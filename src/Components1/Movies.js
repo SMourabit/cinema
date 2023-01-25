@@ -1,5 +1,5 @@
 import React from 'react'
-import { MovieData } from '../Data/data'
+import { MovieData } from '../Datas/data'
 function Movies() {
   return (
     <div id='MOVIE' className='w-[100%] text-white relative top-[-2rem] h-[390rem]

@@ -1,5 +1,4 @@
 {
-  "homepage":"https://soukaina203.github.io/cinema/",
   "name": "cinema",
   "version": "0.1.0",
   "private": true,
@@ -20,7 +19,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "p": "set BUILD_PATH=docs&& set PUBLIC_URL=/myFirst-website&& react-scripts build",
+    "p": "set BUILD_PATH=docs&& set PUBLIC_URL=/cm&& react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",

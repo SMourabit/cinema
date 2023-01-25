@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { serieData } from '../Data/data'
+import { serieData } from '../Datas/data'
 function Series() {
   return (
     <div id='SERIES' className='w-[100%] text-white relative  h-[140rem] top-0

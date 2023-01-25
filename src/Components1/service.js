@@ -9,7 +9,7 @@ function Service() {
         h-[60rem] mt-[32rem]
         main:mt-[24rem]
         '>
-            <img src="../../images/s.jpg" className='mt-[3rem] h-[24rem] 
+            <img src="s.jpg" className='mt-[3rem] h-[24rem] 
             lg:w-[20rem]  lg:ml-[3rem] lg:h-[26rem]  md:mt-[30px] md:w-[20rem] md:h-[20rem]  w-[15rem]'alt="" />
             <div className='w-[15rem] lg:w-[25rem] md:w-[25rem]'>
                 <div>

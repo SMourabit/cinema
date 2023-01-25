@@ -1,9 +1,9 @@
 import React from 'react'
-import Header from './Components/header';
-import Home from './Components/Home';
-import Movies from './Components/Movies';
-import Series from './Components/series';
-import Service from './Components/service';
+import Header from './Components1/header';
+import Home from './Components1/Home';
+import Movies from './Components1/Movies';
+import Series from './Components1/series';
+import Service from './Components1/service';
 
 function App() {
   return (
