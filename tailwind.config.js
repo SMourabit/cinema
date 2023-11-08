@@ -11,7 +11,8 @@ module.exports = {
           hero:"#19222B",
           black2:"#17161C",
           service:"#1F1E24"
-        }
+        },
+
       },
       screens: {
         'tablet': '640px',
@@ -29,7 +30,11 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      display:['group-focus'],
+      opacity:['group-focus'],
+      inset:['group-focus']
+    },
   },
   plugins: [],
 }

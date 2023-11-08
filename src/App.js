@@ -7,7 +7,7 @@ import Service from './Components1/service';
 
 function App() {
   return (
-    <div className='flex flex-col lg:h-[356rem] main:h-[230rem] bg-black'>
+    <div className='flex flex-col lg:h-[356rem] main:h-[230rem] '>
       <Header />
       <Home />
       <Service />
