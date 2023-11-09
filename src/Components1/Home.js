@@ -1,7 +1,7 @@
 import React from 'react'
 function Home() {
   return (
-      <div id='HOME' className='lg:w-[100%]  text-white text-[30px] font-bold  h-fit z-0 absolute top-0'>
+    <div id='HOME' className=' bg-header-hero text-white text-[30px] w-[100%] h-[38rem] lg:w-[100%] font-bold   z-0 '>
 <img src="hero.jpg" alt="hi" className='w-[90rem] h-[38rem] '/>
 <div className='relative  top-[-23rem] left-[1rem]  md:left-[3rem] w-[45%] lg:left-[5rem]'>
 <h4 className='text-header-red lg:text-[29px] md:text-[22px] text-[16px]'>FilmLand</h4>

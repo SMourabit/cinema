@@ -3,28 +3,30 @@ import React from 'react'
 import { serieData } from '../Datas/data'
 function Series() {
   return (
-    <div id='SERIES' className='w-[100%] text-white relative  h-[140rem] top-0
-    lg:h-[170rem] main:h-[48rem] bg-header-service lg:top-[-1rem]
-    md:h-[75rem] md:top-[0rem] z-40
-    main:top-[-14rem]
+    <div id='SERIES' className='w-[100%] text-white relative  h-[101rem] top-0
+     lg:h-[40rem] bg-header-service
+    md:h-[58rem] md:top-[0rem] z-40 
+    flex flex-col items-center lg:justify-start
     '>
-      <p className='lg:text-[1rem] text-header-red font-semibold  ml-[3rem] md:ml-[5rem] lg:ml-[5rem] relative 
-top-[68px] text-[0.9rem]
-'>   BEST TV SERIES</p>
-      <h1 className='lg:text-[2.5rem] text-[1.5rem] font-bold ml-[3rem] lg:ml-[5rem] mt-[3rem] md:text-[2rem] md:ml-[5rem] ' >World Best TV Series
+<div className='mt-[2rem]'>
+      <h1 className='lg:text-[2.5rem] text-[1.5rem] font-bold  md:text-[2rem] ' >World Best TV Series
       </h1>
-      <div className='lg:w-[90%] h-[27rem] mt-12 lg:m-[5rem] md:m-[5rem] 
-       grid place-items-center	 gap-4 main:grid-cols-4 lg:grid-cols-2 md:grid-cols-2 grid-cols-1
+      <p className='lg:text-[1rem] text-center text-header-red font-semibold text-[0.9rem]
+'>   BEST TV SERIES</p>
+
+</div>
+      <div className='lg:w-[82%] h-[27rem] mt-12   
+       grid place-items-center	 gap-4 lg:grid-cols-4  md:grid-cols-2 grid-cols-1 md:gap-[1rem]
        
        '>
         {serieData.map((e) => {
           return (
 
-            <div className='lg:w-[17rem] h-[30rem] md:w-[15rem] main:w-[17rem] flex flex-col bg-black rounded text-white '>
-              <img src={e.pic} alt="" className='w-[17rem] rounded h-[26rem] hover:opacity-80' />
-              <h3 className='font-bold ml-3 hover:text-header-red duration-500'>{e.name}</h3>
-              <p className='ml-3 font-light'>year:{e.year}</p>
-              <p className='ml-3 font-light' >Duration:{e.duree}</p>
+            <div className='  h-[22rem] w-[15rem]   md:w-[14rem] lg:w-[15rem] flex flex-col bg-black rounded text-white '>
+              <img src={e.pic} key={e.id} alt="" className='w-[17rem] rounded h-[17rem] lg:w-[16rem] hover:opacity-80' />
+              <h3  key={e.id} className='ml-3 font-bold duration-500 cursor-pointer hover:text-header-red'>{e.name}</h3>
+              <p  key={e.id}className='ml-3 font-normal text-gray-500'>year:{e.year}</p>
+              <p key={e.id} className='ml-3 font-normal text-gray-500' >Duration: {e.duree}</p>
             </div>
 
           )
