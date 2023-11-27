@@ -10,10 +10,10 @@ function Header() {
           <GiFilmSpool className="ml-[-1rem] md:ml-0 text-3xl text-left text-red-500" /> FilmLand
         </h1>
         <ul className="items-center hidden pr-10 text-base font-normal cursor-pointer lg:flex">
-          <li className="px-6 py-4 duration-500 hover:text-header-red hover:pointer-auto" > <Link to="HOME" smooth={true} offset={200}>  Home </Link> </li>
-          <li className="px-6 py-4 duration-500 hover:text-header-red" > <Link to="SERVICE" smooth={true} offset={200} duration={500}>  Services </Link> </li>
-          <li className="px-6 py-4 duration-500 hover:text-header-red" > <Link to="SERIES" smooth={true} offset={200}>  Series </Link> </li>
-          <li className="px-6 py-4 duration-500 hover:text-header-red" > <Link to="MOVIE" smooth={true} offset={200}>  Movies </Link> </li>
+          <li className="px-6 py-4 duration-500 hover:text-header-red hover:pointer-auto" > <Link to="HOME" smooth={true} >  Home </Link> </li>
+          <li className="px-6 py-4 duration-500 hover:text-header-red" > <Link to="SERVICE" smooth={true}  duration={500}>  Services </Link> </li>
+          <li className="px-6 py-4 duration-500 hover:text-header-red" > <Link to="SERIES" smooth={true}>  Series </Link> </li>
+          <li className="px-6 py-4 duration-500 hover:text-header-red" > <Link to="MOVIE" smooth={true} >  Movies </Link> </li>
         </ul>
         <button className="hidden px-6 py-4 pr-10 text-base font-normal duration-500 cursor-pointer lg:block hover:text-header-red">
           Welcome
@@ -28,22 +28,22 @@ function Header() {
           <div className="absolute top-0 w-8/12 h-screen ml-auto mr-auto text-white transition-all duration-500 opacity-0 bg-header-hero md:w-5/12 right-full group-focus:right-0 group-focus:opacity-100">
             <ul className="flex flex-col items-center justify-center pr-10 mt-12 text-base font-semibold cursor-pointer">
               <li className="w-full px-6 py-4 duration-500 ">
-                <Link to="HOME" smooth={true} offset={200} duration={500}>
+                <Link to="HOME" smooth={true} duration={400}>
                   Home
                 </Link>
               </li>
               <li className="w-full px-6 py-4 ml-auto mr-auto duration-500">
-                <Link to="SERVICE" smooth={true} offset={200} duration={500}>
+                <Link to="SERVICE" smooth={true} duration={400}>
                   Services
                 </Link>
               </li>
               <li className="w-full px-6 py-4 duration-500">
-                <Link to="SERIES" smooth={true} offset={200} duration={500}>
+                <Link to="SERIES" smooth={true} offset={-200} duration={400}>
                   Series
                 </Link>
               </li>
               <li className="w-full px-6 py-4 duration-500">
-                <Link to="MOVIE" smooth={true} offset={200} duration={500}>
+                <Link to="MOVIE" smooth={true} offset={-200} duration={400}>
                   Movies
                 </Link>
               </li>
