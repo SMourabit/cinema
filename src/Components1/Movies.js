@@ -2,11 +2,10 @@ import React from 'react'
 import { MovieData } from '../Datas/data'
 function Movies() {
   return (
-    <div id='MOVIE' className='w-[100%] text-white  h-[292rem]
-    lg:h-[410rem] main:h-[85rem]  bg-black 
+    <div id='MOVIE' className='w-full text-white  h-[content]
+   bg-black 
     flex flex-col items-center lg:justify-start
-
-    md:h-[170rem] md:top-[3rem] z-0 
+    md:top-[3rem] z-0 
     '>
       <div className='mt-[2rem]'>
         <h1 className='lg:text-[2.5rem] text-[1.5rem] font-bold text-center  md:text-[2rem] ' > Upcoming Movies
@@ -16,17 +15,15 @@ function Movies() {
 
       </div>
 
-      <div className='lg:w-[82%] h-[27rem] mt-12   
-       grid place-items-center	 gap-4 lg:grid-cols-4  md:grid-cols-2 grid-cols-1 md:gap-[1rem]
-       
-       '>       {MovieData.map((e) => {
+      <div className='container grid justify-center w-auto grid-cols-1 p-10 mx-auto duration-500 transform place-items-center md:p-8 lg:grid-cols-2 2xl:grid-cols-4 gap-x-6 gap-y-6 '>
+      {MovieData.map((e) => {
           return (
 
-            <div className='  h-[22rem] w-[15rem]   md:w-[14rem] lg:w-[15rem] flex flex-col bg-black rounded text-white '>
-              <img src={e.pic} key={e.id} alt="" className='w-[17rem] rounded h-[17rem] lg:w-[16rem] hover:opacity-80' />
-              <h3 key={e.id} className='ml-3 font-bold duration-500 cursor-pointer hover:text-header-red'>{e.name}</h3>
-              <p key={e.id} className='ml-3 font-normal text-gray-500'>year:{e.year}</p>
-              <p key={e.id} className='ml-3 font-normal text-gray-500' >Duration: {e.duree}</p>
+            <div key={e.id} className='h-full max-w-sm pb-6 mx-auto my-auto duration-300 transform shadow-sm cursor-pointer bg-header-black2 shadow-header-hero hover:-translate-y-1n p-7 hover:shadow-xl'>
+            <img src={e.pic} key={e.id} alt="" className='w-[17rem] rounded h-[17rem] lg:w-[16rem] hover:opacity-80' />
+              <h3  className='mt-2 ml-1 font-bold duration-500 max-w-[14.5rem]  cursor-pointer hover:text-header-red'>{e.name}</h3>
+              <p  className='ml-1 font-medium text-gray-500'>year:{e.year}</p>
+              <p  className='ml-1 font-medium text-gray-500' >Duration: {e.duree}</p>
             </div>
 
           )

@@ -1,19 +1,35 @@
-import React from 'react'
+import React from 'react';
+
 function Home() {
   return (
-    <div id='HOME' className=' bg-header-hero text-white text-[30px] w-[100%] h-[38rem] lg:w-[100%] font-bold   z-0 '>
-<img src="hero.jpg" alt="hi" className='w-[90rem] h-[38rem] '/>
-<div className='relative  top-[-23rem] left-[1rem]  md:left-[3rem] w-[45%] lg:left-[5rem]'>
-<h4 className='text-header-red lg:text-[29px] md:text-[22px] text-[16px]'>FilmLand</h4>
-<h1 className='text-[2rem] lg:text-[3.5rem]'>Unlimited Movie, 
-  <br />
-  TVs Shows, & More.</h1>
-<h3 className='lg:text-[23px] font-normal text-yellow-200
-md:text-[19px] text-[16px] 
-'>Romance,Action,Horror</h3>
+    <div id="HOME" className="z-0 flex h-screen 
+     bg-header-hero 
+      text-white text-[30px] mt-[4rem] w-full ">
+      <img
+        src="hero.jpg"
+        alt="hi"
+        className="absolute z-0 object-cover w-full h-full lg:h-fit"
+      />
+
+
+      <div className='flex justify-start w-full h-full'>
+
+      <div className="relative px-8 py-12 font-semibold text-left w-fit">
+        <h4 className="text-header-red text-[29px] font-medium md:text-[22px] ">
+          FilmLand
+        </h4>
+        <h1 className="text-[2rem]  md:text-[2.8rem]  lg:text-[3.5rem]  ">
+          Unlimited Movie,<br />
+          TVs Shows, & More.
+        </h1>
+        <h3 className="md:text-[23px] font-medium text-yellow-200  text-[16px]">
+          Romance , Action , Horror
+        </h3>
+      </div>
+      </div>
+      
     </div>
-    </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
